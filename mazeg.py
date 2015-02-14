@@ -2,7 +2,7 @@ from random import shuffle,randrange
 import os
 import msvcrt
 import time
-
+#A Maze
 
 def display(i):
 	
