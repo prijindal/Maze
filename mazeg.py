@@ -6,7 +6,7 @@ from getchFix import _Getch
 #A Maze
 
 def system_clear():
-	clean = 'cls' if os.name == 'lt' else 'clear'
+	clean = 'cls' if os.name == 'nt' else 'clear'
 	os.system(clean)
 
 def display(i):
@@ -254,7 +254,7 @@ def change_position(d,n):
 
 		print("Alright,you will be taken out of this Game")
 		print("Better luck,next Time")
-		input()
+		raw_input()
 		exit(0)
 
 	else:
@@ -281,7 +281,7 @@ print("You know, if it seemed too tough for you\n")
 print("All The Best")
 print("Press enter to start ")
 
-input()
+raw_input()
 
 for i in range(1,8):
 	system_clear()
@@ -308,10 +308,10 @@ for i in range(1,8):
 
 	display(i)
 	print("You Won this Round")
-	input("Press Enter to move to the next Level")
+	raw_input("Press Enter to move to the next Level")
 
 system_clear()
 print("Congrats, You cleared all the Levels")
 print("Made by-")
 print("Priyanshu Jindal")
-input("Enter To Exit")
+raw_input("Enter To Exit")
