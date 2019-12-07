@@ -12,11 +12,11 @@ def system_clear():
 def display(i):
 
 	system_clear()
-	print("This is level no. ",i)
-	print("Time elapsed %.0f"%(time.time()-start_time))
+	print(("This is level no. ",i))
+	print(("Time elapsed %.0f"%(time.time()-start_time)))
 	print("\nYour Maze looks like this\n")
 	for (a,b) in zip(hori_wall,vert_wall):
-		print(''.join(a+['\n']+b))
+		print((''.join(a+['\n']+b)))
 	print("Move your Character")
 
 
@@ -254,7 +254,7 @@ def change_position(d,n):
 
 		print("Alright,you will be taken out of this Game")
 		print("Better luck,next Time")
-		raw_input()
+		input()
 		exit(0)
 
 	else:
@@ -281,7 +281,7 @@ print("You know, if it seemed too tough for you\n")
 print("All The Best")
 print("Press enter to start ")
 
-raw_input()
+input()
 
 for i in range(1,8):
 	system_clear()
@@ -308,10 +308,10 @@ for i in range(1,8):
 
 	display(i)
 	print("You Won this Round")
-	raw_input("Press Enter to move to the next Level")
+	input("Press Enter to move to the next Level")
 
 system_clear()
 print("Congrats, You cleared all the Levels")
 print("Made by-")
 print("Priyanshu Jindal")
-raw_input("Enter To Exit")
+input("Enter To Exit")
